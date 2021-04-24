@@ -1,0 +1,35 @@
+.navbar-container {
+  background: linear-gradient(
+    90.96deg,
+    rgba(48, 118, 222, 0.4) 1.05%,
+    rgba(241, 108, 11, 0.13) 99.89%
+  );
+  width: 100%;
+  height: 80px;
+}
+.navbar-body {
+  width: 90%;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-body-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 33px;
+  color: #022742;
+}
+
+.navbar-body-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
