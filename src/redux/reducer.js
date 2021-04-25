@@ -2,7 +2,7 @@ import {FETCH_DATA} from './actionTypes'
 
 const initialState={
 
-    data:[1,2,3]
+    data:[]
 }
 
 const fetchReducer=(state=initialState,action)=>{

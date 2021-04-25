@@ -1,0 +1,14 @@
+.donut-chart {
+  position: relative;
+}
+.donut-center-text {
+  text-align: center;
+  position: absolute;
+  font-size: 24px;
+
+  top: 120px;
+  left: 100px;
+}
+.donut-center-text span {
+  font-weight: bold;
+}

@@ -1,0 +1,43 @@
+.progress-bar {
+  position: relative;
+}
+.progress-bar-text-left {
+  position: absolute;
+  top: -70px;
+  left: 0px;
+}
+.progress-bar-text-left span {
+  font-weight: bold;
+}
+.progress-bar-text-left div {
+  font-weight: bold;
+  color: #0c8722;
+}
+.progress-bar-text-right {
+  position: absolute;
+  top: -70px;
+  left: 270px;
+}
+.progress-bar-text-right span {
+  font-weight: bold;
+}
+.progress-bar-text-right div {
+  font-weight: bold;
+}
+
+.progress-bar-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.progress-bar-bottom-text {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -80px;
+  color: #2b73de;
+}
+.progress-bar-bottom-text :hover {
+  cursor: pointer;
+  border-bottom: 1px solid #2b73de;
+}
