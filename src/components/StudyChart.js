@@ -2,23 +2,20 @@ import React from 'react'
 import {Pie, Doughnut} from 'react-chartjs-2';
 import '../assets/css/StudyChart.css'
 
-const StudyChart = () => {
+const StudyChart = ({values,time,labels,title,colors}) => {
   
+  const hours=Math.floor(time/60)
+  const minutes=time%60
 
     const state = {
+
+    
  
-        labels: ['Class', 'Study', 'Freetime',
-                 ],
+        labels:labels,
         datasets: [
           {
             label: 'Study Data',
-            backgroundColor: [
-              '#2D82FE',
-              '#FF9E57',
-              '#2fed51',
-              '#00A6B4',
-              '#6800B4'
-            ],
+            backgroundColor:colors,
             hoverBackgroundColor: [
             '#501800',
             '#4B5000',
@@ -26,7 +23,7 @@ const StudyChart = () => {
             '#003350',
             '#35014F'
             ],
-            data: [65, 59, 80,]
+            data: values
           }
         ]
       }
@@ -61,7 +58,7 @@ position:'right'
 }}
 />
 
-<div className="donut-center-text"> <span >Total</span>  <div>2h 10 min</div></div>
+<div className="donut-center-text"> <span >{title}</span>  <div>{hours>0?hours+"h"  :""} {minutes} min</div></div>
             
         </div>
     )

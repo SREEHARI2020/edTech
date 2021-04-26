@@ -5,7 +5,9 @@ import '../assets/css/ProgressBar.css'
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { Button } from '@material-ui/core';
 
-const ProgressBar = () => {
+const ProgressBar = ({time,total}) => {
+
+  const hours=Math.floor(total/60)
 
     const BorderLinearProgress = withStyles((theme: Theme) =>
     createStyles({
@@ -32,13 +34,13 @@ const ProgressBar = () => {
     return (
         <div className="progress-bar">
              <div className={classes.root}>
-             <BorderLinearProgress variant="determinate" value={50} />
+             <BorderLinearProgress variant="determinate" value={time} />
                 
 
 </div>
 
-        <div  className="progress-bar-text-left" ><span>Used</span> <div>30m</div></div>
-        <div className="progress-bar-text-right"><span>Max</span> <div>2h</div></div>
+        <div  className="progress-bar-text-left" ><span>Used</span> <div>{time}m</div></div>
+        <div className="progress-bar-text-right"><span>Max</span> <div>{hours}h</div></div>
       
         <div className="progress-bar-button"><Button variant="outlined" color="primary">Extend Free Time</Button></div>
         <div className="progress-bar-bottom-text"><div>Change Time Restrictions</div></div>
