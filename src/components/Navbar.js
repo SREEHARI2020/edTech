@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-body-menu">
 
-                    <Button variant="outlined" color="primary">
+                    <Button className="navbar-body-menu-button"  variant="outlined" color="primary">
                         <img src={addIcon}/> <span className="navbar-body-menu-text"> Add Device</span></Button>
  
                   
@@ -43,7 +43,7 @@ const Navbar = () => {
   open={Boolean(anchorEl)}
   onClose={handleClose}
 >
-  <MenuItem onClick={handleClose}>Add Device</MenuItem>
+  <MenuItem className="navbar-body-menu-add-device" onClick={handleClose}>Add Device</MenuItem>
   <MenuItem onClick={handleClose}>Edit details</MenuItem>
   <MenuItem onClick={handleClose}>Delete Child</MenuItem>
 </Menu>

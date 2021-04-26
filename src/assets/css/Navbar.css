@@ -26,10 +26,29 @@
   line-height: 33px;
   color: #022742;
 }
+.navbar-body-menu-add-device {
+  visibility: hidden;
+}
 
 .navbar-body-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 180px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-body-menu-button {
+    visibility: hidden;
+  }
+  .navbar-body-menu-add-device {
+    visibility: initial;
+  }
+
+  .navbar-container {
+    width: 100%;
+  }
+
+  .navbar-body-user {
+    font-size: 18px;
+  }
 }

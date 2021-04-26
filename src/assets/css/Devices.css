@@ -37,3 +37,12 @@
   cursor: pointer;
   border-bottom: 1px solid #2b73de;
 }
+@media only screen and (max-width: 768px) {
+  .device-container-bottom-text {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+}

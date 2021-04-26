@@ -41,3 +41,29 @@
   cursor: pointer;
   border-bottom: 1px solid #2b73de;
 }
+
+@media only screen and (max-width: 768px) {
+  .progress-bar-bottom-text {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -20px;
+  }
+  .progress-bar {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .progress-bar-text-left {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    font-size: 16px;
+  }
+  .progress-bar-text-right {
+    position: absolute;
+    top: -60px;
+    left: 200px;
+    font-size: 16px;
+  }
+}

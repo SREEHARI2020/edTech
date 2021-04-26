@@ -37,7 +37,7 @@ const StudyChart = () => {
 
              <Doughnut
 
-className="home-page-body-chart"
+className="donut-chart-body-chart"
 
     data={state}
 

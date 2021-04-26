@@ -48,3 +48,23 @@
   text-align: center;
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .home-page-body {
+    flex-direction: column;
+
+    height: 100%;
+    justify-self: center;
+
+    margin-bottom: 20px;
+  }
+  .home-page-body-chart-container {
+    margin: 0 auto;
+  }
+  .home-page-body-chart-progressbar-container {
+    margin: 0 auto;
+  }
+  .home-page-body-chart-devices-container {
+    margin: 0 auto;
+  }
+}

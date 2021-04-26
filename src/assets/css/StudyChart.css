@@ -12,3 +12,16 @@
 .donut-center-text span {
   font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+  .donut-chart-body-chart {
+    height: 270px !important;
+    width: 270px !important;
+  }
+
+  .donut-center-text {
+    font-size: 20px;
+
+    top: 120px;
+    left: 90px;
+  }
+}
